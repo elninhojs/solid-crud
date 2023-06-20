@@ -4,13 +4,13 @@
   "description": "",
   "scripts": {
     "start": "vite",
-    "dev": "npm run db:dev & vite",
-    "testEnv": "echo '{\"task\":[]}' > test-db.json && npm run db:test & vite" ,
+    "dev": "npm run config:dev && npm run db:dev & vite",
+    "start:test": "npm run config:test && npm run db:test & vite" ,
     "build": "vite build",
     "serve": "vite preview",
     "db:dev": "node node_modules/json-server/lib/cli/bin.js --watch dev-db.json --port 1234",
-    "db:test": "node node_modules/json-server/lib/cli/bin.js --watch test-db.json --port 1234",
-    "db:stop": "fuser -n tcp -k 9001 & exit 0",
+    "db:test": "./scripts/make-test-db.sh && node node_modules/json-server/lib/cli/bin.js --watch test-db.json --port 4321",
+    "db:stop": "fuser -n tcp -k 1234 & fuser -n tcp -k 4321",
     "config:test":"./scripts/make-config.sh 4321",
     "config:dev":"./scripts/make-config.sh 1234"
   },

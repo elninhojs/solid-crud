@@ -2,7 +2,7 @@
   "task": [
     {
       "text": "Nice one",
-      "completed": true,
+      "completed": false,
       "id": "67c4f44c-083f-4854-b7d9-4e9fd2bc0bef"
     },
     {
@@ -16,44 +16,9 @@
       "id": "6ec4b535-6e8d-4b92-8c5b-eacda6b64891"
     },
     {
-      "text": "Majestic 2",
-      "completed": false,
-      "id": "f36993f4-5ff3-4541-803f-affd5774e2da"
-    },
-    {
       "text": "Majestic 3",
-      "completed": true,
+      "completed": false,
       "id": "1bddf698-f4cc-4b0d-a412-1849a0835d23"
-    },
-    {
-      "text": "vento ventania",
-      "completed": false,
-      "id": "a7c3fb12-5d52-4bcc-8e99-0599cc8f06dd"
-    },
-    {
-      "text": "Noce kode",
-      "completed": true,
-      "id": "851a0666-1830-4e59-b4ec-2bce5f12aeca"
-    },
-    {
-      "text": "Plant bananas",
-      "completed": false,
-      "id": "73b5ddd5-3520-4f96-86fb-4665588fb912"
-    },
-    {
-      "text": "Plant bananas",
-      "completed": false,
-      "id": "6cdbb192-81f6-471b-9859-db39e6a7839c"
-    },
-    {
-      "text": "Plant bananas",
-      "completed": false,
-      "id": "ddda8bef-222a-4bd4-b5ec-4fba4404f973"
-    },
-    {
-      "text": "Plant bananas",
-      "completed": false,
-      "id": "8facbd8e-29f4-4025-b0fd-c1b45fff5c72"
     }
   ]
 }
