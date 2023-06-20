@@ -27,5 +27,7 @@ To show test reports:
 ```bash
 $ npx playwright show-report
 ```
-
-
+If you wish to see the tests running
+```bash
+$ npx playwright test --ui
+```
