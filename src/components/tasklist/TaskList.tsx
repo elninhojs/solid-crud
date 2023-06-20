@@ -13,13 +13,14 @@ const TaskList = ({ onRemove, onToggleTaskStatus, data }: Props) => {
                 <For each={data()}>
                     {(task: Task) => (
                         <div aria-label="task record row" class="row row-cols-3 mb-3 justify-content-center">
-                            <button class="btn btn-danger w-auto" onClick={() => onRemove({...task})}>
+                            <button aria-label="remove task button" class="btn btn-danger w-auto" onClick={() => onRemove({...task})}>
                                 Remove
                             </button>
-                            <div class={`bg-light p-2 mx-2 ${task.completed && 'text-decoration-line-through text-success'}`}>
+                            <div aria-label="task text" class={`bg-light p-2 mx-2 ${task.completed && 'text-decoration-line-through text-success'}`}>
                                 {task.text}
                             </div>
                             <input
+                                aria-label="task complete checkbox"
                                 type="checkbox"
                                 checked={task.completed}
                                 role="button"
