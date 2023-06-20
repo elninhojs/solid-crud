@@ -45,9 +45,9 @@ const App: Component = () => {
       <div class="container">
         <Box title="Task list">
           <InputBar onAddTask={async (text: string)=>await onAddTask(text, mutate)}></InputBar>
-          <TaskList data={data} 
-            onRemove={async (task: Task)=> await onRemove({...task}, mutate)} 
-            onToggleTaskStatus={async (task: Task, completed: boolean) => await onEditTask(task, completed, refetch)}></TaskList>
+            <TaskList data={data} 
+              onRemove={async (task: Task)=> await onRemove({...task}, mutate)} 
+              onToggleTaskStatus={async (task: Task, completed: boolean) => await onEditTask(task, completed, refetch)}></TaskList>
         </Box>
       </div>
     </div>

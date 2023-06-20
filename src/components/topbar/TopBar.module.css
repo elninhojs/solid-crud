@@ -4,6 +4,11 @@
   pointer-events: none;
 }
 
+.topbar img {
+  position: relative;
+  top: 10px;
+}
+
 .topbar {
   height: 60px;
   line-height: 60px;

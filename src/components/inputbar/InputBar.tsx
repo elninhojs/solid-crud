@@ -1,17 +1,17 @@
 import { createSignal } from "solid-js";
+import { TextField, Button } from "@suid/material"
+import AddIcon from "@suid/icons-material/Add";
 
 interface Props {
   onAddTask: (inputValue: string) => Promise<void>
 }
-const InputBar = ({onAddTask}: Props) => {
+const InputBar = ({ onAddTask }: Props) => {
   const [inputValue, setInputValue] = createSignal("")
   return (
-    <form class="mb-5 row row-cols-2 justify-content-center" onSubmit={(e)=>{e.preventDefault(); onAddTask(inputValue()); setInputValue("")}}>
-      <input aria-label="task input text" type="text" class="input-group-text p-1 w-25" placeholder="Add task here..." oninput={(e)=>setInputValue(e.target.value)} value={inputValue()}/>
-      <button aria-label="button to add task" class="btn btn-primary ms-3 w-auto primary" type="submit">
-        Add task
-      </button>
-  </form>
+    <form class="task-form" onSubmit={(e) => { e.preventDefault(); onAddTask(inputValue()); setInputValue("") }}>
+      <TextField autoFocus autoComplete="off" variant="standard" inputProps={{ "aria-label": "task input text" }} label="Add task here..." onChange={(e) => setInputValue(e.target.value)} value={inputValue()} />
+      <Button aria-label="button to add task" variant="contained" type="submit" color="secondary" startIcon={<AddIcon />}>Add</Button>
+    </form>
   );
 };
 

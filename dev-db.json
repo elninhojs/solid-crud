@@ -1,16 +1,6 @@
 {
   "task": [
     {
-      "text": "Do the dishes",
-      "completed": false,
-      "id": "ad06c8ba-e634-40e6-96ea-30ac7e516caf"
-    },
-    {
-      "text": "Clean the floor",
-      "completed": false,
-      "id": "56588230-afda-4b24-b6de-138cabfd5570"
-    },
-    {
       "text": "Mop the floor",
       "completed": false,
       "id": "9f17e0f1-0686-42c7-b98a-e56f81284051"
@@ -24,6 +14,11 @@
       "text": "Lock all the back doors ",
       "completed": false,
       "id": "780ac692-5a1a-4c1a-85b0-954d5df19be4"
+    },
+    {
+      "text": "Cool mouite",
+      "completed": false,
+      "id": "6cde1983-0929-461f-9bdd-3a610b72c46f"
     }
   ]
 }

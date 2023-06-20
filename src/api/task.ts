@@ -8,7 +8,7 @@ import { API_HOST } from "../config";
 const sleep = (time: number) => new Promise(ok => setTimeout(ok, time))
 
 export async function fetchTasks(){
-    await sleep(800)
+    await sleep(400)
     const response = await fetch(`${API_HOST}/task`);
     const results = await response.json();
     return results as Task[];
