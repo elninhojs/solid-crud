@@ -12,7 +12,7 @@ const TaskList = ({ onRemove, onToggleTaskStatus, data }: Props) => {
                 <div class="text-center">Showing {(data() as Task[]) && (data() as Task[]).length || 0 } task{(data() as Task[]) && (data() as Task[]).length > 1 && "s" || ""}</div>
                 <For each={data()}>
                     {(task: Task) => (
-                        <div class="row row-cols-3 mb-3 justify-content-center">
+                        <div aria-label="task record row" class="row row-cols-3 mb-3 justify-content-center">
                             <button class="btn btn-danger w-auto" onClick={() => onRemove({...task})}>
                                 Remove
                             </button>
