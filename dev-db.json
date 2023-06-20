@@ -1,24 +1,29 @@
 {
   "task": [
     {
-      "text": "Nice one",
+      "text": "Do the dishes",
       "completed": false,
-      "id": "67c4f44c-083f-4854-b7d9-4e9fd2bc0bef"
+      "id": "ad06c8ba-e634-40e6-96ea-30ac7e516caf"
     },
     {
-      "text": "Third one",
-      "completed": true,
-      "id": "284c4f90-f8a1-4f5b-8ee7-0259cdf9c5ec"
-    },
-    {
-      "text": "Majestic",
-      "completed": true,
-      "id": "6ec4b535-6e8d-4b92-8c5b-eacda6b64891"
-    },
-    {
-      "text": "Majestic 3",
+      "text": "Clean the floor",
       "completed": false,
-      "id": "1bddf698-f4cc-4b0d-a412-1849a0835d23"
+      "id": "56588230-afda-4b24-b6de-138cabfd5570"
+    },
+    {
+      "text": "Mop the floor",
+      "completed": false,
+      "id": "9f17e0f1-0686-42c7-b98a-e56f81284051"
+    },
+    {
+      "text": "Open all windows",
+      "completed": false,
+      "id": "6878ef29-7901-477c-9ff4-3aa63c885388"
+    },
+    {
+      "text": "Lock all the back doors ",
+      "completed": false,
+      "id": "780ac692-5a1a-4c1a-85b0-954d5df19be4"
     }
   ]
 }
