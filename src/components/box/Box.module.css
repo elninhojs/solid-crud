@@ -1,0 +1,16 @@
+.container {
+  background-color: #eff2f6;
+  border-radius: 16px;
+  padding-top: 20px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  min-height: 400px;
+}
+
+.container strong {
+  text-align: center;
+  display: block;
+  padding-bottom: 10px;
+  font-size: 24px;
+  color: #00012e;
+}

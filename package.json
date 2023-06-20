@@ -1,0 +1,32 @@
+{
+  "name": "vite-template-solid",
+  "version": "0.0.0",
+  "description": "",
+  "scripts": {
+    "start": "vite",
+    "dev": "npm run db:dev & vite",
+    "testEnv": "echo '{\"task\":[]}' > test-db.json && npm run db:test & vite" ,
+    "build": "vite build",
+    "serve": "vite preview",
+    "db:dev": "node node_modules/json-server/lib/cli/bin.js --watch dev-db.json --port 1234",
+    "db:test": "node node_modules/json-server/lib/cli/bin.js --watch test-db.json --port 1234",
+    "db:stop": "fuser -n tcp -k 9001 & exit 0",
+    "config:test":"./scripts/make-config.sh 4321",
+    "config:dev":"./scripts/make-config.sh 1234"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.35.1",
+    "@types/uuid": "^9.0.2",
+    "json-server": "^0.17.3",
+    "typescript": "^4.9.5",
+    "vite": "^4.3.9",
+    "vite-plugin-solid": "^2.7.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.0",
+    "solid-icons": "^1.0.8",
+    "solid-js": "^1.6.10",
+    "uuid": "^9.0.0"
+  }
+}
