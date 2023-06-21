@@ -1,29 +1,44 @@
 {
   "task": [
     {
-      "text": "Do the dishes",
-      "completed": false,
-      "id": "ad06c8ba-e634-40e6-96ea-30ac7e516caf"
-    },
-    {
-      "text": "Clean the floor",
-      "completed": false,
-      "id": "56588230-afda-4b24-b6de-138cabfd5570"
-    },
-    {
-      "text": "Mop the floor",
-      "completed": false,
-      "id": "9f17e0f1-0686-42c7-b98a-e56f81284051"
-    },
-    {
       "text": "Open all windows",
       "completed": false,
       "id": "6878ef29-7901-477c-9ff4-3aa63c885388"
     },
     {
       "text": "Lock all the back doors ",
-      "completed": false,
+      "completed": true,
       "id": "780ac692-5a1a-4c1a-85b0-954d5df19be4"
+    },
+    {
+      "text": "One more",
+      "completed": false,
+      "id": "f7b74f17-b0b5-4148-9e36-8cf654f685b7"
+    },
+    {
+      "text": "cool",
+      "completed": false,
+      "id": "5822d203-f7ce-418b-b867-dce373320fd9"
+    },
+    {
+      "text": "nice",
+      "completed": false,
+      "id": "1899538b-6fba-435e-a6a4-a762adcf6f5a"
+    },
+    {
+      "text": "wow",
+      "completed": true,
+      "id": "88b3aee4-2b0e-4db6-a286-fd761c86e028"
+    },
+    {
+      "text": "One more",
+      "completed": false,
+      "id": "233f3984-440b-4c55-984d-d0fbec2c232d"
+    },
+    {
+      "text": "digita um texto",
+      "completed": false,
+      "id": "77a98817-005c-40b0-b8f7-c42908f434d2"
     }
   ]
 }
