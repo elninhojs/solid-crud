@@ -12,7 +12,7 @@ interface GridProps {
   } 
 
 export const Grid = ({children, ariaLabel, cols, colsBig, colsMedium, colsSmall, colsTiny}: GridProps) => (
-  <div area-aria-label={ariaLabel} style={`
+  <div aria-label={ariaLabel} style={`
   --cols: ${cols}; --cols-big: ${colsBig || cols};
   --cols-medium: ${colsMedium || colsBig || cols};
   --cols-small: ${colsSmall || colsMedium || colsBig || cols};
