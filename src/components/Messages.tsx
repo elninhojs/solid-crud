@@ -3,7 +3,7 @@ import toast, { Toaster } from 'solid-toast';
 export default function Messages () {
     return (
         <Toaster
-        position="top-center"
+        position="top-right"
         // Spacing between each toast in pixels
         gutter={8}
         containerClassName=""
