@@ -1,44 +1,24 @@
 {
   "task": [
     {
-      "text": "Open all windows",
+      "text": "My new task",
       "completed": false,
-      "id": "6878ef29-7901-477c-9ff4-3aa63c885388"
+      "id": "9571838c-e975-4b82-aee2-6498e41b5250"
     },
     {
-      "text": "Lock all the back doors ",
+      "text": "really?",
       "completed": true,
-      "id": "780ac692-5a1a-4c1a-85b0-954d5df19be4"
+      "id": "456971ba-2230-4d1e-8859-261aa0b6a08c"
     },
     {
-      "text": "One more",
-      "completed": false,
-      "id": "f7b74f17-b0b5-4148-9e36-8cf654f685b7"
-    },
-    {
-      "text": "cool",
-      "completed": false,
-      "id": "5822d203-f7ce-418b-b867-dce373320fd9"
-    },
-    {
-      "text": "nice",
-      "completed": false,
-      "id": "1899538b-6fba-435e-a6a4-a762adcf6f5a"
-    },
-    {
-      "text": "wow",
+      "text": "Cool",
       "completed": true,
-      "id": "88b3aee4-2b0e-4db6-a286-fd761c86e028"
+      "id": "cb0d59c7-3e1e-4631-abec-d0326198d84e"
     },
     {
-      "text": "One more",
+      "text": "fasdfasdf",
       "completed": false,
-      "id": "233f3984-440b-4c55-984d-d0fbec2c232d"
-    },
-    {
-      "text": "digita um texto",
-      "completed": false,
-      "id": "77a98817-005c-40b0-b8f7-c42908f434d2"
+      "id": "8fb83955-32f6-42c9-a1d5-ee2f41f792a0"
     }
   ]
 }

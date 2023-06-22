@@ -1,4 +1,5 @@
 import { createSignal } from "solid-js";
+import { Button, Grid, Icons } from "../../components";
 
 interface Props {
   onAddTask: (inputValue: string) => Promise<void>
@@ -6,11 +7,11 @@ interface Props {
 const InputBar = ({onAddTask}: Props) => {
   const [inputValue, setInputValue] = createSignal("")
   return (
-    <form class="mb-5 row row-cols-2 justify-content-center" onSubmit={(e)=>{e.preventDefault(); onAddTask(inputValue()); setInputValue("")}}>
-      <input aria-label="task input text" type="text" class="input-group-text p-1 w-25" placeholder="Add task here..." oninput={(e)=>setInputValue(e.target.value)} value={inputValue()}/>
-      <button aria-label="button to add task" class="btn btn-primary ms-3 w-auto primary" type="submit">
-        Add task
-      </button>
+    <form onSubmit={(e)=>{e.preventDefault(); onAddTask(inputValue()); setInputValue("")}}>
+      <Grid cols="6fr 2fr">
+        <input aria-label="task input text" type="text" placeholder="Add task here..." oninput={(e)=>setInputValue(e.target.value)} value={inputValue()}/>
+        <Button ariaLabel="button to add task" icon={Icons.aiPlus} label="Add task" colorContext="primary" type="submit"></Button>
+      </Grid>
   </form>
   );
 };

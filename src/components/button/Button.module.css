@@ -1,0 +1,41 @@
+.button {
+    border: none;
+    margin: 0;
+    display: inline-flex;
+    align-items: center;
+    background: var(--bg);
+    color: var(--fg);
+    vertical-align: middle;
+    border-radius: 12pt 12pt 12pt 12pt;
+    padding: 10px 10px 10px 10px;
+    font-family: Satoshi, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    justify-content: center;
+}
+
+.button .icon {
+    display: inline-flex;
+    margin-right: .5rem;
+}
+
+.button:disabled {
+    cursor: not-allowed;
+    background: var(--color-disabled);
+    color: var(--color-disabled-fg);
+}
+
+.button:disabled:hover {
+    cursor: not-allowed;
+    background: var(--color-disabled);
+    color: var(--color-disabled-fg);
+}
+
+.button:not(:disabled):hover {
+    cursor: pointer;
+    background: var(--hover);
+}
+
+.button:focus {
+    outline: 2px solid var(--focus);
+}

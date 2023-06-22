@@ -3,53 +3,6 @@ body {
   font-family: Satoshi, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-button{
-
-  border-radius: 12px;
-  padding: 20px 40px;
-  font-family: Satoshi, sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  border: none;
-  background: none;
-}
-
-button:hover{
-  cursor: pointer;
-  opacity: .9;
-}
-
-button.primary {
-  outline-color:#00a7dc;
-  background-color: #00a7dc;
-  color: white;
-}
-
-button.secondary {
-  outline-color:white;
-  background-color: white;
-  color: black;
-}
-
-.box {
-  
-  background-color: #eff2f6;
-  border-radius: 16px;
-  display: flex;
-}
-
-
-div.main-content{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 input[type=text]{
   border-radius: 12px;
   padding: 20px 40px;
@@ -62,4 +15,16 @@ input[type=text]{
 .loading {
   opacity: .5;
   cursor: not-allowed;
+}
+
+.text {
+  font-family: Satoshi, sans-serif;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.text-decoration-line-through{
+  text-decoration: line-through;
 }
