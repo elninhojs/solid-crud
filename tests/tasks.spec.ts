@@ -25,6 +25,9 @@ test.describe("Interactions with fresh data", ()=>{
     await expect(await page.locator('div[aria-label="task record row"]').count()).toEqual(2);
     await expect(await page.locator('div[aria-label="task text"]').nth(0).textContent()).toEqual("Prepare the soil (added using Enter)");
     await expect(await page.locator('div[aria-label="task text"]').nth(1).textContent()).toEqual("Plant bananas (added using Click)");
+
+    await expect(await page.locator('*[aria-label="todo tasks total"]').textContent()).toStrictEqual("2");
+    await expect(await page.locator('*[aria-label="done tasks total"]').textContent()).toStrictEqual("0");
   
   });
   
@@ -46,6 +49,9 @@ test.describe("Interactions with fresh data", ()=>{
     await expect(await page.locator('div[aria-label="task text"]').nth(0).textContent()).toEqual("Task to be solved");
     await expect(await page.locator('div[aria-label="task text"]').nth(1).textContent()).toEqual("Task to be solved/unsolved");
     
+    await expect(await page.locator('*[aria-label="todo tasks total"]').textContent()).toStrictEqual("2");
+    await expect(await page.locator('*[aria-label="done tasks total"]').textContent()).toStrictEqual("0");
+
     const uncheckedText = "Mark as Done"
     const checkedText = "Mark as TODO"
 
@@ -65,6 +71,9 @@ test.describe("Interactions with fresh data", ()=>{
     await page.waitForTimeout(2000)
     await expect(await page.locator('*[aria-label="task complete checkbox"]').nth(1).textContent()).toStrictEqual(uncheckedText);
   
+
+    await expect(await page.locator('*[aria-label="todo tasks total"]').textContent()).toStrictEqual("1");
+    await expect(await page.locator('*[aria-label="done tasks total"]').textContent()).toStrictEqual("1");
   });
   
   test('removing fresh added tasks - DELETE', async ({ page }) => {
@@ -111,6 +120,10 @@ test.describe("Interactions with pre existing data", ()=>{
     await page.waitForTimeout(1200)
     await expect(await page.locator('div[aria-label="task record row"]').count()).toEqual(3);
     await page.waitForTimeout(1200)
+    
+    await expect(await page.locator('*[aria-label="todo tasks total"]').textContent()).toStrictEqual("1");
+    await expect(await page.locator('*[aria-label="done tasks total"]').textContent()).toStrictEqual("2");
+    //add here the check for global data
 
   });
   

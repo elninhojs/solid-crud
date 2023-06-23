@@ -12,33 +12,13 @@
     },
     {
       "text": "Cool",
-      "completed": true,
+      "completed": false,
       "id": "07ad4951-7972-431b-896e-77d8a945b2a5"
     },
     {
-      "text": "Nice",
-      "completed": false,
-      "id": "8ba740ad-ec21-4e85-a583-5cf37a9ab7ae"
-    },
-    {
-      "text": "yep",
-      "completed": false,
-      "id": "1789a5a6-4f9f-40b7-a330-b708d5452bfc"
-    },
-    {
-      "text": "One more task here",
-      "completed": false,
-      "id": "2046bffb-443d-4cd7-9a87-65ec508de7e2"
-    },
-    {
       "text": "cool maite",
-      "completed": false,
+      "completed": true,
       "id": "2eb95584-cae2-478b-9a9e-ce50959e31ba"
-    },
-    {
-      "text": "Added one more",
-      "completed": false,
-      "id": "c92e35fa-23bb-4d15-bed1-8f8d8cef5738"
     }
   ]
 }
