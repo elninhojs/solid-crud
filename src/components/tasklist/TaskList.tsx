@@ -15,7 +15,7 @@ const TaskList = ({ onRemove, onToggleTaskStatus, data }: Props) => {
                     <For each={data()}>
                         {(task: Task) => (
                             <div class={styles.item}>
-                                <Grid cols="8fr 3fr 3fr" ariaLabel="task record row">
+                                <Grid cols="8fr 3fr 3fr" ariaLabel="task record row" colsSmall="8fr 4fr 4fr" colsTiny="1fr" >
                                         <div aria-label="task text" class={`text ${task.completed && 'text-decoration-line-through'}`}>
                                             {task.text}
                                         </div>

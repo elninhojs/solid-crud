@@ -3,7 +3,10 @@ import App from './App'
 import './index.css'
 import './components/colors.css'
 import { GlobalContextProvider } from './context/store'
+import { NotificationProvider } from './components/notification/Notification'
 
 render(() => <GlobalContextProvider>
-        <App />
+                <NotificationProvider>
+                    <App />
+                </NotificationProvider>
     </GlobalContextProvider>, document.getElementById('root') as HTMLElement)

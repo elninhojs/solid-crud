@@ -8,7 +8,7 @@ const InputBar = ({onAddTask}: Props) => {
   const [inputValue, setInputValue] = createSignal("")
   return (
     <form onSubmit={(e)=>{e.preventDefault(); onAddTask(inputValue()); setInputValue("")}}>
-      <Grid cols="6fr 2fr">
+      <Grid cols="6fr 2fr" colsSmall="1fr 1fr" colsTiny="1fr">
         <input aria-label="task input text" type="text" placeholder="Add task here..." oninput={(e)=>setInputValue(e.target.value)} value={inputValue()}/>
         <Button ariaLabel="button to add task" icon={Icons.aiPlus} label="Add task" colorContext="primary" type="submit"></Button>
       </Grid>

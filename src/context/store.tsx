@@ -12,7 +12,7 @@ const GlobalContext = createContext<ContextProps>();
 export function GlobalContextProvider(props: any){
     const [todoTasks, setTodoTasks] = createSignal(0)
     const [doneTasks, setDoneTasks] = createSignal(0)
-
+    
     return (<GlobalContext.Provider value={{todoTasks, setTodoTasks, doneTasks, setDoneTasks}}>
         {props.children}
     </GlobalContext.Provider>)

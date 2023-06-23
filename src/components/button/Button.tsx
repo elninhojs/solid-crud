@@ -11,7 +11,7 @@ interface ButtonProps {
     type?: "button" | "submit" | "reset",
     label?: string,
     icon?: IconContent,
-    onClick?:(e: any)=>{}
+    onClick?:(e: any)=> any
 }
 
 export default function Button({disabled, icon, label, colorContext="primary", ariaLabel, onClick, type="button", height = "auto", width = "auto"}: ButtonProps){

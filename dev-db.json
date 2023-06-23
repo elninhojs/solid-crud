@@ -1,24 +1,39 @@
 {
   "task": [
     {
-      "text": "One",
+      "text": "Do the dishes",
       "completed": true,
-      "id": "69aee991-0628-4207-906c-e830a37eb511"
+      "id": "15096031-835b-4667-a7be-6efe33b2d5ce"
     },
     {
-      "text": "One more",
+      "text": "mop the floor",
       "completed": false,
-      "id": "7d973a31-df63-4b39-9e63-d269894adb45"
+      "id": "cfd73731-6d95-4991-96c6-3e78b2c23282"
     },
     {
-      "text": "Cool",
-      "completed": false,
-      "id": "07ad4951-7972-431b-896e-77d8a945b2a5"
-    },
-    {
-      "text": "cool maite",
+      "text": "bake the bread",
       "completed": true,
-      "id": "2eb95584-cae2-478b-9a9e-ce50959e31ba"
+      "id": "38e21d6a-79f3-4ff5-8496-945db63582c2"
+    },
+    {
+      "text": "open all the windows",
+      "completed": false,
+      "id": "6a1fe817-5dc0-4be2-b8c1-b2c8a1e9d4d4"
+    },
+    {
+      "text": "close all the doors",
+      "completed": false,
+      "id": "c83207b3-36ba-49ac-b1cc-d8e72fb21bf8"
+    },
+    {
+      "text": "format your computer",
+      "completed": false,
+      "id": "bd1fcdde-7f5d-4edd-800b-d99185dfdf7e"
+    },
+    {
+      "text": "Adjust your screen",
+      "completed": false,
+      "id": "cb83ac00-2468-4b66-938b-17e3836b57f6"
     }
   ]
 }

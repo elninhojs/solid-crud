@@ -1,5 +1,4 @@
 import { Task } from "./types";
-import {v4 as uuidv4} from 'uuid';
 import { API_HOST } from "../config";
 
 /**
@@ -15,7 +14,7 @@ export async function fetchTasks(){
 }
 
 export async function addTask(input: Task){
-    const task = {...input, id: uuidv4()}
+    const task = {...input, id: crypto.randomUUID()}
     const response = await fetch(`${API_HOST}/task`, {method: "POST", body: JSON.stringify(task),  headers: {
         "Content-Type": "application/json",
       }});
