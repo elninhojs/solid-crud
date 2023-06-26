@@ -1,0 +1,74 @@
+.info {
+    background: var(--color-primary);
+    color: var(--color-primary-fg);
+}
+
+.warn {
+    background: var(--color-warn);
+    color: var(--color-warn-fg);
+}
+
+.error {
+    background: var(--color-error);
+    color: var(--color-error-fg);
+}
+
+.success {
+    background: var(--color-success);
+    color: var(--color-success-fg);
+}
+
+.info:hover {
+    background: var(--color-primary-light);
+}
+
+.warn:hover {
+    background: var(--color-warn-light);
+}
+
+.error:hover {
+    background: var(--color-error-light);
+}
+
+.success:hover {
+    background: var(--color-success-light);
+}
+
+.icon {
+    margin: 0 1rem 0 0;
+    display: flex;
+}
+
+.notification {
+    margin: .5rem 1rem;
+    padding: 1rem;
+    pointer-events: initial;
+    max-width: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 1px 1px 5px #0003;
+    word-wrap: break-word;
+    word-break: break-word;
+    border-radius: 8px;
+    opacity: .9;
+}
+
+.notification:hover{
+    cursor: pointer;
+}
+
+.wrapper {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000000;
+    pointer-events: none;
+    font-family: "Noto Sans", "sans";
+}

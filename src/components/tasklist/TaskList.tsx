@@ -1,5 +1,7 @@
-import { For, Resource } from "solid-js";
+import { For, Resource, Show } from "solid-js";
 import { Task } from "../../api/types";
+import { Button, Grid, Icons } from "../../components";
+import styles from "./TaskList.module.css"
 
 interface Props {
     onRemove: (task: Task) => Promise<void>
@@ -9,29 +11,26 @@ interface Props {
 const TaskList = ({ onRemove, onToggleTaskStatus, data }: Props) => {
     return (
         <div class={(data.loading && "loading") || ""}>
-                <div class="text-center">Showing {(data() as Task[]) && (data() as Task[]).length || 0 } task{(data() as Task[]) && (data() as Task[]).length > 1 && "s" || ""}</div>
-                <For each={data()}>
-                    {(task: Task) => (
-                        <div aria-label="task record row" class="row row-cols-3 mb-3 justify-content-center">
-                            <button aria-label="remove task button" class="btn btn-danger w-auto" onClick={() => onRemove({...task})}>
-                                Remove
-                            </button>
-                            <div aria-label="task text" class={`bg-light p-2 mx-2 ${task.completed && 'text-decoration-line-through text-success'}`}>
-                                {task.text}
+                <div class={styles.stats}>Showing {(data() as Task[]) && (data() as Task[]).length || 0 } task{(data() as Task[]) && (data() as Task[]).length > 1 && "s" || ""}</div>
+                    <For each={data()}>
+                        {(task: Task) => (
+                            <div class={styles.item}>
+                                <Grid cols="8fr 3fr 3fr" ariaLabel="task record row" colsSmall="8fr 4fr 4fr" colsTiny="1fr" >
+                                        <div aria-label="task text" class={`text ${task.completed && 'text-decoration-line-through'}`}>
+                                            {task.text}
+                                        </div>
+                                        
+                                        <Button ariaLabel="remove task button" onClick={() => onRemove({...task})} colorContext="error" label="Remove" icon={Icons.bsTrash}></Button>
+                                        <Show when={task.completed}>
+                                            <Button label="Mark as TODO" colorContext="warn" ariaLabel="task complete checkbox" icon={Icons.faSolidListCheck} onClick={(e) => (onToggleTaskStatus({...task}, !task.completed))}></Button>   
+                                        </Show>
+                                        <Show when={!task.completed}>
+                                            <Button label="Mark as Done" colorContext="secondary" ariaLabel="task complete checkbox" icon={Icons.bsCheck} onClick={(e) => (onToggleTaskStatus({...task}, !task.completed))}></Button>   
+                                        </Show>  
+                                </Grid>
                             </div>
-                            <input
-                                aria-label="task complete checkbox"
-                                type="checkbox"
-                                checked={task.completed}
-                                role="button"
-                                class="form-check-input h-auto px-3"
-                                onClick={(e) => {
-                                    onToggleTaskStatus({...task}, !task.completed)
-                                }}
-                            />
-                        </div>
-                    )}
-                </For>
+                        )}
+                    </For>
         </div>
 
     );

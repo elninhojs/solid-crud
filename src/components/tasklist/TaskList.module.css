@@ -1,0 +1,12 @@
+.item {
+    padding-bottom: 3px;
+    line-height: 52px;
+    font-size: 22px;
+    border-bottom: 1px solid rgba(0, 0, 0, .3);
+}
+
+.stats{
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}

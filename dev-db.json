@@ -2,28 +2,38 @@
   "task": [
     {
       "text": "Do the dishes",
-      "completed": false,
-      "id": "ad06c8ba-e634-40e6-96ea-30ac7e516caf"
+      "completed": true,
+      "id": "15096031-835b-4667-a7be-6efe33b2d5ce"
     },
     {
-      "text": "Clean the floor",
+      "text": "mop the floor",
       "completed": false,
-      "id": "56588230-afda-4b24-b6de-138cabfd5570"
+      "id": "cfd73731-6d95-4991-96c6-3e78b2c23282"
     },
     {
-      "text": "Mop the floor",
-      "completed": false,
-      "id": "9f17e0f1-0686-42c7-b98a-e56f81284051"
+      "text": "bake the bread",
+      "completed": true,
+      "id": "38e21d6a-79f3-4ff5-8496-945db63582c2"
     },
     {
-      "text": "Open all windows",
+      "text": "open all the windows",
       "completed": false,
-      "id": "6878ef29-7901-477c-9ff4-3aa63c885388"
+      "id": "6a1fe817-5dc0-4be2-b8c1-b2c8a1e9d4d4"
     },
     {
-      "text": "Lock all the back doors ",
+      "text": "close all the doors",
       "completed": false,
-      "id": "780ac692-5a1a-4c1a-85b0-954d5df19be4"
+      "id": "c83207b3-36ba-49ac-b1cc-d8e72fb21bf8"
+    },
+    {
+      "text": "format your computer",
+      "completed": false,
+      "id": "bd1fcdde-7f5d-4edd-800b-d99185dfdf7e"
+    },
+    {
+      "text": "Adjust your screen",
+      "completed": false,
+      "id": "cb83ac00-2468-4b66-938b-17e3836b57f6"
     }
   ]
 }

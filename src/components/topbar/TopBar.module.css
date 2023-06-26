@@ -22,6 +22,11 @@
   padding-left: 10px;
 }
 
+.topbar img {
+  position: relative;
+  top: 10px;
+}
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
